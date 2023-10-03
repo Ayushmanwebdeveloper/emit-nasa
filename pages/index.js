@@ -23,12 +23,11 @@ export default function Home() {
           <div class="grid-container">
             <div class="usa-hero__callout">
               <h1 class="usa-hero__heading">
-                <span class="usa-hero__heading--alt">Hero callout:</span>Bring
-                attention to a project priority
+                <span class="usa-hero__heading--alt">Meet EMIT,</span>The newest imaging spectrometer on the ISS
               </h1>
               <p>
-                Support the callout with some short explanatory text. You don’t need
-                more than a couple of sentences.
+                NASA’s EMIT mission studies the composition of surface minerals in Earth’s arid regions, helping climate researchers better understand
+                how dust affects climate when it is blown into the atmosphere
               </p>
               <a class="usa-button" href="">Call to action</a>
             </div>
