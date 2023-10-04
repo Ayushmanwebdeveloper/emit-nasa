@@ -1,38 +1,104 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import jQuery from "jquery"
+import { useEffect } from 'react';
+import Footer from './components/Footer';
+import Introduction from './components/Introduction';
 
 export default function Home() {
+  
+  useEffect(() => {
+    const navLinks = document.querySelectorAll('nav ul li > a:not(:only-child)');
+    const navDropdowns = document.querySelectorAll('.nav-dropdown');
+    const navToggle = document.getElementById('nav-toggle');
+  
+    navLinks.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        const siblingDropdown = link.nextElementSibling;
+        siblingDropdown.style.display = siblingDropdown.style.display === 'block' ? 'none' : 'block';
+        
+        navDropdowns.forEach((dropdown) => {
+          if (dropdown !== siblingDropdown) {
+            dropdown.style.display = 'none';
+          }
+        });
+        
+        e.stopPropagation();
+      });
+    });
+  
+    document.addEventListener('click', () => {
+      navDropdowns.forEach((dropdown) => {
+        dropdown.style.display = 'none';
+      });
+    });
+  
+    navToggle.addEventListener('click', () => {
+      const navUl = document.querySelector('nav ul');
+      navUl.style.display = navUl.style.display === 'block' ? 'none' : 'block';
+  
+      navToggle.classList.toggle('active');
+    });
+  }, []);
+  
+
   return (
     <body>
+    
       <a class="usa-skipnav" href="#main-content">Skip to main content</a>
       <div class="usa-overlay"></div>
       <header class="usa-header usa-header--basic">
         <div class="usa-nav-container">
           <div class="usa-navbar">
+
+
+       {/**Navbar */}
+       <section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!">🍀 Clover Clothing</a>
+    </div>
+    <nav>
+  <div class="nav-mobile">
+    <a id="nav-toggle" href="#!"><span></span></a>
+  </div>
+  <ul class="nav-list">
+    <li><a href="#!">Home</a></li>
+    <li><a href="#!">Shop</a></li>
+    <li>
+      <a href="#!">Services</a>
+      <ul class="nav-dropdown">
+        <li><a href="#!">Web Design</a></li>
+        <li><a href="#!">Web Development</a></li>
+        <li><a href="#!">Graphic Design</a></li>
+      </ul>
+    </li>
+    <li><a href="#!">About Us</a></li>
+    <li><a href="#!">Contact</a></li>
+  </ul>
+</nav>
+    </div>
+</section>
+
+       {/**End Navbar */}
+
             <div class="usa-logo">
               <em class="usa-logo__text"
               ><a href="/" title="<Project title>">Earth Surface Mineral Dust Source
-                Investigation ("EMIT")</a></em
-              >
+                Investigation ("EMIT")</a></em>
             </div>
           </div>
         </div>
       </header>
+
       <main id="main-content">
-        <section class="usa-hero" aria-label="Introduction">
-          <div class="grid-container">
-            <div class="usa-hero__callout">
-              <h1 class="usa-hero__heading">
-                <span class="usa-hero__heading--alt">Meet EMIT,</span>The newest imaging spectrometer on the ISS
-              </h1>
-              <p>
-                NASA’s EMIT mission studies the composition of surface minerals in Earth’s arid regions, helping climate researchers better understand
-                how dust affects climate when it is blown into the atmosphere
-              </p>
-              <a class="usa-button" href="">Call to action</a>
-            </div>
-          </div>
-        </section>
+        
+        {/* introduction */}
+
+
+        <Introduction/>
+
+
         <section class="grid-container usa-section">
           <div class="grid-row grid-gap">
             <div class="tablet:grid-col-4">
@@ -56,6 +122,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+
         <section class="usa-graphic-list usa-section usa-section--dark">
           <div class="grid-container">
             <div class="usa-graphic-list__row grid-row grid-gap">
@@ -130,6 +198,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+
         <section id="test-section-id" class="usa-section">
           <div class="grid-container">
             <h2 class="font-heading-xl margin-y-0">Section heading</h2>
@@ -143,143 +213,17 @@ export default function Home() {
             <a class="usa-button usa-button--big" href="">Call to action</a>
           </div>
         </section>
+
+
+
       </main>
-      <footer class="usa-footer">
-        <div class="grid-container usa-footer__return-to-top">
-          <a href="#">Return to top</a>
-        </div>
-        <div class="usa-footer__primary-section">
-          <nav class="usa-footer__nav" aria-label="Footer navigation">
-            <ul class="grid-row grid-gap">
-              <li
-                class="
-              mobile-lg:grid-col-4
-              desktop:grid-col-auto
-              usa-footer__primary-content
-            "
-              >
-                <a class="usa-footer__primary-link" href="javascript:void(0);"
-                >&lt;Primary link&gt;</a
-                >
-              </li>
-              <li
-                class="
-              mobile-lg:grid-col-4
-              desktop:grid-col-auto
-              usa-footer__primary-content
-            "
-              >
-                <a class="usa-footer__primary-link" href="javascript:void(0);"
-                >&lt;Primary link&gt;</a
-                >
-              </li>
-              <li
-                class="
-              mobile-lg:grid-col-4
-              desktop:grid-col-auto
-              usa-footer__primary-content
-            "
-              >
-                <a class="usa-footer__primary-link" href="javascript:void(0);"
-                >&lt;Primary link&gt;</a
-                >
-              </li>
-              <li
-                class="
-              mobile-lg:grid-col-4
-              desktop:grid-col-auto
-              usa-footer__primary-content
-            "
-              >
-                <a class="usa-footer__primary-link" href="javascript:void(0);"
-                >&lt;Primary link&gt;</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="usa-footer__secondary-section">
-          <div class="grid-container">
-            <div class="grid-row grid-gap">
-              <div
-                class="
-              usa-footer__logo
-              grid-row
-              mobile-lg:grid-col-6 mobile-lg:grid-gap-2
-            "
-              >
-                <div class="mobile-lg:grid-col-auto">
-                  <img
-                    class="usa-footer__logo-img"
-                    src="/assets/img/logo-img.png"
-                    alt=""
-                  />
-                </div>
-                <div class="mobile-lg:grid-col-auto">
-                  <p class="usa-footer__logo-heading">&lt;Name of Agency&gt;</p>
-                </div>
-              </div>
-              <div class="usa-footer__contact-links mobile-lg:grid-col-6">
-                <div class="usa-footer__social-links grid-row grid-gap-1">
-                  <div class="grid-col-auto">
-                    <a class="usa-social-link" href="javascript:void(0);"
-                    ><img
-                        class="usa-social-link__icon"
-                        src="/assets/img/usa-icons/facebook.svg"
-                        alt="Facebook"
-                      /></a>
-                  </div>
-                  <div class="grid-col-auto">
-                    <a class="usa-social-link" href="javascript:void(0);"
-                    ><img
-                        class="usa-social-link__icon"
-                        src="/assets/img/usa-icons/twitter.svg"
-                        alt="Twitter"
-                      /></a>
-                  </div>
-                  <div class="grid-col-auto">
-                    <a class="usa-social-link" href="javascript:void(0);"
-                    ><img
-                        class="usa-social-link__icon"
-                        src="/assets/img/usa-icons/youtube.svg"
-                        alt="YouTube"
-                      /></a>
-                  </div>
-                  <div class="grid-col-auto">
-                    <a class="usa-social-link" href="javascript:void(0);"
-                    ><img
-                        class="usa-social-link__icon"
-                        src="/assets/img/usa-icons/instagram.svg"
-                        alt="Instagram"
-                      /></a>
-                  </div>
-                  <div class="grid-col-auto">
-                    <a class="usa-social-link" href="javascript:void(0);"
-                    ><img
-                        class="usa-social-link__icon"
-                        src="/assets/img/usa-icons/rss_feed.svg"
-                        alt="RSS"
-                      /></a>
-                  </div>
-                </div>
-                <p class="usa-footer__contact-heading">
-                  &lt;Agency Contact Center&gt;
-                </p>
-                <address class="usa-footer__address">
-                  <div class="usa-footer__contact-info grid-row grid-gap">
-                    <div class="grid-col-auto">
-                      <a href="tel:1-800-555-5555">&lt;(800) 555-GOVT&gt;</a>
-                    </div>
-                    <div class="grid-col-auto">
-                      <a href="mailto:info@agency.gov">&lt;info@agency.gov&gt;</a>
-                    </div>
-                  </div>
-                </address>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      
+      {/* footer */}
+      
+     <Footer/>
+
+
+
       <div class="usa-identifier">
         <section
           class="usa-identifier__section usa-identifier__section--masthead"
