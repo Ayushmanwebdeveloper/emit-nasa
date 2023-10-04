@@ -4,6 +4,9 @@ import styles from '../styles/Home.module.css';
 import Footer from './components/Footer';
 import Introduction from './components/Introduction';
 import Navbar from './components/Nabvar';
+import Faq from './components/Faq';
+import Contact from './components/Contact';
+import Articles from './components/Articles';
 
 export default function Home() {
   
@@ -65,84 +68,12 @@ export default function Home() {
           </div>
         </section>
 
+       {/* Articles */}
+        <Articles/>
 
-        <section class="usa-graphic-list usa-section usa-section--dark">
-          <div class="grid-container">
-            <div class="usa-graphic-list__row grid-row grid-gap">
-              <div class="usa-media-block tablet:grid-col">
-                <img
-                  class="usa-media-block__img"
-                  src="/assets/img/circle-124.png"
-                  alt="Alt text"
-                />
-                <div class="usa-media-block__body">
-                  <h2 class="usa-graphic-list__heading">
-                    Graphic headings can vary.
-                  </h2>
-                  <p>
-                    Graphic headings can be used a few different ways, depending on
-                    what your landing page is for. Highlight your values, specific
-                    program areas, or results.
-                  </p>
-                </div>
-              </div>
-              <div class="usa-media-block tablet:grid-col">
-                <img
-                  class="usa-media-block__img"
-                  src="/assets/img/circle-124.png"
-                  alt="Alt text"
-                />
-                <div class="usa-media-block__body">
-                  <h2 class="usa-graphic-list__heading">
-                    Stick to 6 or fewer words.
-                  </h2>
-                  <p>
-                    Keep body text to about 30 words. They can be shorter, but try
-                    to be somewhat balanced across all four. It creates a clean
-                    appearance with good spacing.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="usa-graphic-list__row grid-row grid-gap">
-              <div class="usa-media-block tablet:grid-col">
-                <img
-                  class="usa-media-block__img"
-                  src="/assets/img/circle-124.png"
-                  alt="Alt text"
-                />
-                <div class="usa-media-block__body">
-                  <h2 class="usa-graphic-list__heading">
-                    Never highlight anything without a goal.
-                  </h2>
-                  <p>
-                    For anything you want to highlight here, understand what your
-                    users know now, and what activity or impression you want from
-                    them after they see it.
-                  </p>
-                </div>
-              </div>
-              <div class="usa-media-block tablet:grid-col">
-                <img
-                  class="usa-media-block__img"
-                  src="/assets/img/circle-124.png"
-                  alt="Alt text"
-                />
-                <div class="usa-media-block__body">
-                  <h2 class="usa-graphic-list__heading">Could also have 2 or 6.</h2>
-                  <p>
-                    In addition to your goal, find out your users’ goals. What do
-                    they want to know or do that supports your mission? Use these
-                    headings to show those.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        <section id="test-section-id" class="usa-section">
+   
+   
+       <section id="test-section-id" class="usa-section">
           <div class="grid-container">
             <h2 class="font-heading-xl margin-y-0">Section heading</h2>
             <p class="usa-intro">
@@ -156,8 +87,6 @@ export default function Home() {
           </div>
         </section>
 
-
-
       </main>
       
       {/* footer */}
@@ -165,80 +94,15 @@ export default function Home() {
      <Footer/>
 
 
-
+        {/* Contact */}
       <div class="usa-identifier">
-        <section
-          class="usa-identifier__section usa-identifier__section--masthead"
-          aria-label="Agency identifier"
-        >
-          <div class="usa-identifier__container">
-            <div class="usa-identifier__logos">
-              <a href="javascript:void(0)" class="usa-identifier__logo"
-              ><img
-                  class="usa-identifier__logo-img"
-                  src="/assets/img/circle-gray-20.svg"
-                  alt="&lt;Parent agency&gt; logo"
-                  role="img"
-                /></a>
-            </div>
-            <section
-              class="usa-identifier__identity"
-              aria-label="Agency description"
-            >
-              <p class="usa-identifier__identity-domain">domain.gov</p>
-              <p class="usa-identifier__identity-disclaimer">
-                An official website of the <a href="">&lt;Parent agency&gt;</a>
-              </p>
-            </section>
-          </div>
-        </section>
-        <nav
-          class="usa-identifier__section usa-identifier__section--required-links"
-          aria-label="Important links"
-        >
-          <div class="usa-identifier__container">
-            <ul class="usa-identifier__required-links-list">
-              <li class="usa-identifier__required-links-item">
-                <a
-                  href="javascript:void(0)"
-                  class="usa-identifier__required-link usa-link"
-                >About &lt;Parent shortname&gt;</a
-                >
-              </li>
-              <li class="usa-identifier__required-links-item">
-                <a href="" class="usa-identifier__required-link usa-link"
-                >Accessibility support</a
-                >
-              </li>
-              <li class="usa-identifier__required-links-item">
-                <a href="" class="usa-identifier__required-link usa-link"
-                >FOIA requests</a
-                >
-              </li>
-              <li class="usa-identifier__required-links-item">
-                <a href="" class="usa-identifier__required-link usa-link"
-                >No FEAR Act data</a
-                >
-              </li>
-              <li class="usa-identifier__required-links-item">
-                <a href="" class="usa-identifier__required-link usa-link"
-                >Office of the Inspector General</a
-                >
-              </li>
-              <li class="usa-identifier__required-links-item">
-                <a href="" class="usa-identifier__required-link usa-link"
-                >Performance reports</a
-                >
-              </li>
-              <li class="usa-identifier__required-links-item">
-                <a href="" class="usa-identifier__required-link usa-link"
-                >Privacy policy</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <section
+      <Contact/>
+
+        {/* FAQ */}
+       <Faq/>
+
+
+        {/* <section
           class="usa-identifier__section usa-identifier__section--usagov"
           aria-label="U.S. government information and services"
         >
@@ -248,7 +112,7 @@ export default function Home() {
             </div>
             <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
           </div>
-        </section>
+        </section> */}
       </div>
     </body>
   );
