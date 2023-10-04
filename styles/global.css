@@ -5,4 +5,9 @@
   background-position: top;
 }
 
+.usa-header--basic .usa-navbar {
+  position: relative;
+  width: -webkit-fill-available;
+  z-index: 100;
+}
 
