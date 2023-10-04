@@ -11,3 +11,11 @@
   z-index: 100;
 }
 
+.usa-hero__callout{
+max-width: 50vw;
+}
+
+.usa-hero>.grid-container {
+max-height: 95vh;
+}
+
