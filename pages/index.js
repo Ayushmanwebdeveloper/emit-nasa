@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import jQuery from "jquery"
 import { useEffect } from 'react';
 import Footer from './components/Footer';
 import Introduction from './components/Introduction';
