@@ -8,6 +8,7 @@
   "dependencies": {
     "@uswds/uswds": "^3.6.1",
     "next": "latest",
+    "next-auth": "^4.23.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
