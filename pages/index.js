@@ -10,6 +10,7 @@ import Articles from './components/Articles';
 import Highlight from './components/Highlight';
 import Header from './components/Header';
 import Outro from './components/Outro';
+import CardGrid from './components/CardGrid';
 
 export default function Home() { 
 
@@ -22,6 +23,7 @@ export default function Home() {
       <main id="main-content">
         <Introduction/>
         <Highlight/>
+        <CardGrid/>
         <Articles/>
         <Outro/>
       </main>
