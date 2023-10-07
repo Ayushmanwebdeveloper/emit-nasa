@@ -175,8 +175,15 @@ nav {
   }
 }
 
+.usa-button{
+
+  margin-top: 1rem;
+
+}
+
 @media screen and (min-width: $breakpoint) {
   .nav-list {
     display: block !important;
   }
 }
+

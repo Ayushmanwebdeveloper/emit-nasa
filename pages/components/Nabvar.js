@@ -59,7 +59,7 @@ export default function Navbar(){
     </li>
     <li><a href="#!">About Us</a></li>
     <li><a href="#!">Contact</a></li>
-    <li><a href="#!">Login/Signup</a></li>
+    <li><a className="usa-button" href="#!" >Login/Signup</a></li>
 
   </ul>
 </nav>
@@ -68,3 +68,4 @@ export default function Navbar(){
 
     );
 }
+
