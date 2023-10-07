@@ -21,7 +21,7 @@ let [savedCards, setSavedCards] = useState([]);
         </div>
       </div>
       <div class="usa-card__body">
-      <button style={{}}>saved</button>
+      <button type="button" class="usa-button" style={{padding: "0.7rem"}}>saved</button>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
           tenetur quo cupiditate, eaque qui officia recusandae.
