@@ -42,11 +42,11 @@ export default function Card({title, description, image, btn, btnlink, issaved, 
         </div>
       </div>
       <div class="usa-card__body">
-      if (savedcard) {
-            <button style={{}} onClick={saveCard}>save</button>
-        } else {
-            <button style={{}} onClick={saveCard}>saved</button>
-        }
+    {  savedcard ? (
+            <button style={{}} onClick={saveCard}>save</button>)
+        
+            :(<button style={{}} onClick={saveCard}>saved</button>)
+         }
         <p>
           {description}
         </p>
