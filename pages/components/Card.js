@@ -12,6 +12,7 @@ export default function Card({title, description, image, btn, btnlink, issaved, 
         issaved: savedcard,
         user: user?.email,
     }
+    console.log(card);
    let saveCard = () => {
         if (user) {
             setSavedcard(true);
