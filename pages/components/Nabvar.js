@@ -1,5 +1,6 @@
 
 import { useEffect } from 'react';
+import Link from 'next/link';
 export default function Navbar(){
     useEffect(() => {
         const navLinks = document.querySelectorAll('nav ul li > a:not(:only-child)');
@@ -59,7 +60,7 @@ export default function Navbar(){
     </li>
     <li><a href="#!">About Us</a></li>
     <li><a href="#!">Contact</a></li>
-    <li><a className="usa-button" href="#!" >Login/Signup</a></li>
+    <li><Link className='usa-button' href='/api/auth/signin'>Login/Signup</Link></li>
 
   </ul>
 </nav>

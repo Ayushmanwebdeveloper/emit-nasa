@@ -11,8 +11,17 @@ import Highlight from './components/Highlight';
 import Header from './components/Header';
 import Outro from './components/Outro';
 import CardGrid from './components/CardGrid';
+import { authOptions } from '/pages/api/auth/[...nextauth]';
+import { getServerSession } from "next-auth/next";
+import clientPromise from '../utils/database';
 
-export default function Home() { 
+export default function Home({ savedcards , user }) { 
+  let crruser = null;
+  if (user) {
+    crruser = user;
+    console.log(crruser);
+  }
+
 
   return ( 
     <body>
@@ -34,4 +43,30 @@ export default function Home() {
       </div>
     </body>
   );
+}
+
+export async function getServerSideProps({ req, res }) {
+  try {
+    const client = await clientPromise;
+    const db = client.db("emit");
+    const savedcards = await db
+      .collection("scards")
+      .find({})
+      .toArray();
+    const session = await getServerSession(req, res, authOptions);
+    res.setHeader(
+      'Cache-Control',
+      'no-cache, no-store, max-age=0, must-revalidate'
+    )
+    if (!session) {
+      return {
+        props: { savedcards: JSON.parse(JSON.stringify(savedcards)), user: null },
+      };
+    }
+    return {
+      props: { savedcards: JSON.parse(JSON.stringify(savedcards)), user: JSON.parse(JSON.stringify(session?.user)) },
+    };
+  } catch (e) {
+    console.error(e);
+  }
 }
