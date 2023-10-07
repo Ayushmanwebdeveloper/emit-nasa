@@ -6,10 +6,12 @@ export default function Articles(){
             <div class="usa-graphic-list__row grid-row grid-gap">
               <div class="usa-media-block tablet:grid-col">
                 <img
-                  class="usa-media-block__img"
+                  className="usa-media-block__img"
                   src="/assets/img/circle-124.png"
                   alt="Alt text"
                 />
+
+
                 <div class="usa-media-block__body">
                   <h2 class="usa-graphic-list__heading">
                     Graphic headings can vary.
@@ -23,7 +25,7 @@ export default function Articles(){
               </div>
               <div class="usa-media-block tablet:grid-col">
                 <img
-                  class="usa-media-block__img"
+                  className="usa-media-block__img"
                   src="/assets/img/circle-124.png"
                   alt="Alt text"
                 />

@@ -37,28 +37,30 @@ export default function Navbar(){
 
     return(
 
-        <section class="navigation">
-  <div class="nav-container">
+  <section className="navigation">
+  <div className="nav-container">
     <div class="brand">
-      <a href="#!">🍀 Clover Clothing</a>
+      <a href="#!">EMIT</a>
     </div>
     <nav>
-  <div class="nav-mobile">
+  <div className="nav-mobile">
     <a id="nav-toggle" href="#!"><span></span></a>
   </div>
-  <ul class="nav-list">
+  <ul className="nav-list">
     <li><a href="#!">Home</a></li>
-    <li><a href="#!">Shop</a></li>
+    <li><a href="#!">Media</a></li>
     <li>
-      <a href="#!">Services</a>
-      <ul class="nav-dropdown">
-        <li><a href="#!">Web Design</a></li>
-        <li><a href="#!">Web Development</a></li>
-        <li><a href="#!">Graphic Design</a></li>
+      <a href="#!">Discover</a>
+      <ul className="nav-dropdown">
+        <li><a href="#!">Mission</a></li>
+        <li><a href="#!">News</a></li>
+        <li><a href="#!">Learn</a></li>
       </ul>
     </li>
     <li><a href="#!">About Us</a></li>
     <li><a href="#!">Contact</a></li>
+    <li><a href="#!">Login/Signup</a></li>
+
   </ul>
 </nav>
     </div>
