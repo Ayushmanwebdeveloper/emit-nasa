@@ -11,10 +11,11 @@ import Highlight from './components/Highlight';
 import Header from './components/Header';
 import Outro from './components/Outro';
 import CardGrid from './components/CardGrid';
+import { authOptions } from '/pages/api/auth/[...nextauth]';
 import { getServerSession } from "next-auth/next";
 import clientPromise from '../utils/database';
 
-export default function Home({ incidents, user }) { 
+export default function Home({ savedcards , user }) { 
   let crruser = null;
   if (user) {
     crruser = user;
@@ -59,11 +60,11 @@ export async function getServerSideProps({ req, res }) {
     )
     if (!session) {
       return {
-        props: { savedcards: JSON.parse(JSON.stringify(incidents)), user: null },
+        props: { savedcards: JSON.parse(JSON.stringify(savedcards)), user: null },
       };
     }
     return {
-      props: { incidents: JSON.parse(JSON.stringify(incidents)), user: JSON.parse(JSON.stringify(session?.user)) },
+      props: { savedcards: JSON.parse(JSON.stringify(savedcards)), user: JSON.parse(JSON.stringify(session?.user)) },
     };
   } catch (e) {
     console.error(e);
