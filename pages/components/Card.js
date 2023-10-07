@@ -10,7 +10,7 @@ export default function Card({title, description, image, btn, btnlink, issaved, 
         btn: btn,
         btnlink: btnlink,
         issaved: savedcard,
-        user: user.email,
+        user: user?.email,
     }
    let saveCard = () => {
         if (user) {
