@@ -10,7 +10,7 @@ import Articles from './components/Articles';
 import Highlight from './components/Highlight';
 import Header from './components/Header';
 import Outro from './components/Outro';
-import CardGrid from './components/CardGrid';
+import Card from './components/Card';
 import { authOptions } from '/pages/api/auth/[...nextauth]';
 import { getServerSession } from "next-auth/next";
 import clientPromise from '../utils/database';
@@ -32,7 +32,9 @@ export default function Home({ savedcards , user }) {
       <main id="main-content">
         <Introduction/>
         <Highlight/>
-        <CardGrid/>
+        <ul class="usa-card-group">
+          <Card title="ggg" user={crruser} btn="click" btnlink="#" description="gggg" issaved={false}  image="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"/>
+        </ul>
         <Articles/>
         <Outro/>
       </main>
