@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import clientPromise from '../utils/database';
 
 export default function Card({title, description, image, btn, btnlink, issaved, user}){
     
