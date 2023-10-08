@@ -8,7 +8,7 @@
 .usa-header--basic .usa-navbar {
   position: relative;
   width: -webkit-fill-available;
-  z-index: 100;
+  z-index: 30;
 }
 
 .usa-hero__callout{
@@ -19,3 +19,17 @@ max-width: 50vw;
 max-height: 95vh;
 }
 
+.usa-navbar{
+  z-index: 100;
+}
+.navigation, .nav-dropdown{
+  z-index: 1000;
+}
+header{
+  z-index: 1;
+}
+.usa-footer{
+
+  display: flex;
+  flex-direction: column;
+}

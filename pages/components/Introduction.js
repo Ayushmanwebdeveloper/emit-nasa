@@ -10,7 +10,7 @@ export default function Introduction(){
                 NASA’s EMIT mission studies the composition of surface minerals in Earth’s arid regions, helping climate researchers better understand
                 how dust affects climate when it is blown into the atmosphere
               </p>
-              <a class="usa-button" href="">Call to action</a>
+              <a class="usa-button" href="https://earth.jpl.nasa.gov/emit/">Discover</a>
             </div>
           </div>
         </section>
