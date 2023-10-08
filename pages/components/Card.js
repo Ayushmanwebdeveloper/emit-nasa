@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-export default function Card({title, description, image, btn, btnlink, issaved, user}){
+export default function Card({title, description, image, btn, btnlink, issaved=false, user}){
     
     const [savedcard, setSavedcard] = useState(issaved);
     let card = {
@@ -44,9 +44,9 @@ export default function Card({title, description, image, btn, btnlink, issaved, 
       </div>
       <div class="usa-card__body">
     {  savedcard ? (
-            <button style={{}} onClick={saveCard}>save</button>)
+            <button style={{}} onClick={saveCard}>saved</button>)
         
-            :(<button style={{}} onClick={saveCard}>saved</button>)
+            :(<button style={{}} onClick={saveCard}>save</button>)
          }
         <p>
           {description}

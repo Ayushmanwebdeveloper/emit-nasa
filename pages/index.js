@@ -16,6 +16,7 @@ import { getServerSession } from "next-auth/next";
 import clientPromise from '../utils/database';
 
 export default function Home({ savedcards , user }) { 
+  console.log(savedcards);
   let crruser = null;
   if (user) {
     crruser = user;
