@@ -15,19 +15,21 @@ export default function Footer(){
         <ul class="grid-row grid-gap">
 
           <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
-            <a class="usa-footer__primary-link" href="javascript:void(0);"
-            >&lt;Primary link&gt;</a>
+            <a class="usa-footer__primary-link" href="javascript:void(0);">Primary link</a>
           </li>
 
-          <li
-            class="
+          <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="javascript:void(0);"
+            >Primary link</a>
+          </li>
+          <li class="
           mobile-lg:grid-col-4
           desktop:grid-col-auto
           usa-footer__primary-content
         "
           >
             <a class="usa-footer__primary-link" href="javascript:void(0);"
-            >&lt;Primary link&gt;</a>
+            >Primary link</a>
           </li>
           <li
             class="
@@ -37,17 +39,7 @@ export default function Footer(){
         "
           >
             <a class="usa-footer__primary-link" href="javascript:void(0);"
-            >&lt;Primary link&gt;</a>
-          </li>
-          <li
-            class="
-          mobile-lg:grid-col-4
-          desktop:grid-col-auto
-          usa-footer__primary-content
-        "
-          >
-            <a class="usa-footer__primary-link" href="javascript:void(0);"
-            >&lt;Primary link&gt;</a>
+            >Primary link</a>
           </li>
         </ul>
       </nav>
@@ -71,7 +63,7 @@ export default function Footer(){
 
 
             <div class="mobile-lg:grid-col-auto">
-              <p class="usa-footer__logo-heading">&lt;Name of Agency&gt;</p>
+              <p class="usa-footer__logo-heading">Name of Agency</p>
             </div>
             
           </div>
@@ -111,18 +103,16 @@ export default function Footer(){
 
             </div>
 
-            <p class="usa-footer__contact-heading">
-              &lt;Agency Contact Center&gt;
-            </p>
+            <p class="usa-footer__contact-heading">Agency Contact Center</p>
 
             <address class="usa-footer__address">
               <div class="usa-footer__contact-info grid-row grid-gap">
               
                 <div class="grid-col-auto">
-                  <a href="tel:1-800-555-5555">&lt;(800) 555-GOVT&gt;</a>
+                  <a href="tel:1-800-555-5555">(800) 555-GOVT</a>
                 </div>
                 <div class="grid-col-auto">
-                  <a href="mailto:info@agency.gov">&lt;info@agency.gov&gt;</a>
+                  <a href="mailto:info@agency.gov">info@agency.gov</a>
                 </div>
               </div>
             </address>
