@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-export default function Card({title, description, image, btn, btnlink, issaved=false, user}){
+export default function Card({title, description, image, btn, btnlink, issaved=false, user, savedcards}){
     
     const [savedcard, setSavedcard] = useState(issaved);
     let card = {
@@ -14,6 +14,13 @@ export default function Card({title, description, image, btn, btnlink, issaved=f
     }
     console.log(card);
    let saveCard = () => {
+    console.log(savedcards)
+    savedcards.forEach(x=>{
+     if(x.title==card.title){
+      console.log('I was run');
+      return null;
+     }
+})
         if (user) {
             setSavedcard(true);
             const res = fetch('/api/savecard', {
@@ -27,7 +34,6 @@ export default function Card({title, description, image, btn, btnlink, issaved=f
     }
     return(
         <>
-<ul class="usa-card-group">
 
   <li class="usa-card tablet:grid-col-4">
     <div class="usa-card__container">
@@ -57,7 +63,6 @@ export default function Card({title, description, image, btn, btnlink, issaved=f
       </div>
     </div>
   </li>
-</ul>
         </>
     )
 }

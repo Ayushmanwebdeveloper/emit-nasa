@@ -22,6 +22,13 @@ export default function Home({ savedcards , user }) {
     crruser = user;
     console.log(crruser);
   }
+  let CardGrid = function(){
+    let cards=[]
+    savedcards.forEach(x => {
+      cards.push(<Card title={x.title} savedcards={savedcards} user={crruser} btn={x.btn} btnlink={x.btnlink} description={x.description} issaved={x.issaved} image={x.image} />)
+    })
+    return cards
+  }
 
 
   return ( 
@@ -34,7 +41,7 @@ export default function Home({ savedcards , user }) {
         <Introduction/>
         <Highlight/>
         <ul class="usa-card-group">
-          <Card title="ggg" user={crruser} btn="click" btnlink="#" description="gggg" issaved={false}  image="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"/>
+          <CardGrid/>
         </ul>
         <Articles/>
         <Outro/>
