@@ -15,32 +15,21 @@ export default function Footer(){
         <ul class="grid-row grid-gap">
 
           <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
-            <a class="usa-footer__primary-link" href="javascript:void(0);">Primary link</a>
+            <a class="usa-footer__primary-link" href="javascript:void(0);">NASA</a>
           </li>
 
           <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
-            <a class="usa-footer__primary-link" href="javascript:void(0);"
-            >Primary link</a>
+            <a class="usa-footer__primary-link" href="https://www.jpl.nasa.gov/"
+            >Jet Propulsion Laboratory</a>
           </li>
-          <li class="
-          mobile-lg:grid-col-4
-          desktop:grid-col-auto
-          usa-footer__primary-content
-        "
-          >
-            <a class="usa-footer__primary-link" href="javascript:void(0);"
-            >Primary link</a>
+
+          <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="https://earth.jpl.nasa.gov/emit/"
+            >EMIT</a>
           </li>
-          <li
-            class="
-          mobile-lg:grid-col-4
-          desktop:grid-col-auto
-          usa-footer__primary-content
-        "
-          >
-            <a class="usa-footer__primary-link" href="javascript:void(0);"
-            >Primary link</a>
-          </li>
+
+
+          
         </ul>
       </nav>
     </div>
@@ -63,7 +52,7 @@ export default function Footer(){
 
 
             <div class="mobile-lg:grid-col-auto">
-              <p class="usa-footer__logo-heading">Name of Agency</p>
+              <p class="usa-footer__logo-heading">Follow EMIT on social media</p>
             </div>
             
           </div>
@@ -103,13 +92,12 @@ export default function Footer(){
 
             </div>
 
-            <p class="usa-footer__contact-heading">Agency Contact Center</p>
-
+            <p class="usa-footer__contact-heading">Contact EMIT</p>
             <address class="usa-footer__address">
               <div class="usa-footer__contact-info grid-row grid-gap">
               
                 <div class="grid-col-auto">
-                  <a href="tel:1-800-555-5555">(800) 555-GOVT</a>
+                  <a href="tel:1-800-555-5555">(800)</a>
                 </div>
                 <div class="grid-col-auto">
                   <a href="mailto:info@agency.gov">info@agency.gov</a>

@@ -33,3 +33,12 @@ header{
   display: flex;
   flex-direction: column;
 }
+footer,.usa-footer__return-to-top, .usa-footer__primary-section, .usa-footer__secondary-section{
+  background-color:#fff ;
+ 
+  color:#1b1b1b;
+}
+.usa-social-link__icon{
+  color: #fff;
+  
+}
