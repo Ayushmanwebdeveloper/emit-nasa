@@ -7,21 +7,17 @@ export default function Contact(){
         >
           <div class="usa-identifier__container">
             <div class="usa-identifier__logos">
-              <a href="javascript:void(0)" class="usa-identifier__logo"
-              ><img
+              {/* <a href="javascript:void(0)" class="usa-identifier__logo"><img
                   class="usa-identifier__logo-img"
-                  src="/assets/img/circle-gray-20.svg"
-                  alt="&lt;Parent agency&gt; logo"
-                  role="img"
-                /></a>
+                  src=""
+                  alt="Parent agency logo" role="img"/></a> */}
             </div>
             <section
               class="usa-identifier__identity"
-              aria-label="Agency description"
-            >
-              <p class="usa-identifier__identity-domain">domain.gov</p>
+              aria-label="Agency description">
+              <p class="usa-identifier__identity-domain"></p>
               <p class="usa-identifier__identity-disclaimer">
-                An official website of the <a href="">&lt;Parent agency&gt;</a>
+                A community website of<a href="https://earth.jpl.nasa.gov/emit/"> EMIT</a>
               </p>
             </section>
           </div>

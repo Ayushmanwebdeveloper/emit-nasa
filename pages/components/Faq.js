@@ -5,27 +5,14 @@ export default function Faq(){
         <div class="usa-identifier__container">
           <ul class="usa-identifier__required-links-list">
             <li class="usa-identifier__required-links-item">
-              <a href="javascript:void(0)"
-                class="usa-identifier__required-link usa-link">About Parent shortname</a>
+              <a href="javascript:void(0)" class="usa-identifier__required-link usa-link">About EMIT</a>
             </li>
             <li class="usa-identifier__required-links-item">
-              <a href="" class="usa-identifier__required-link usa-link">Accessibility support</a>
+              <a href="https://earth.jpl.nasa.gov/emit/mission/faq/" class="usa-identifier__required-link usa-link">FAQ</a>
             </li>
             <li class="usa-identifier__required-links-item">
-              <a href="" class="usa-identifier__required-link usa-link">FOIA requests</a>
-            </li>
-            <li class="usa-identifier__required-links-item">
-              <a href="" class="usa-identifier__required-link usa-link">No FEAR Act data</a>
-            </li>
-            <li class="usa-identifier__required-links-item">
-              <a href="" class="usa-identifier__required-link usa-link">Office of the Inspector General</a>
-            </li>
-            <li class="usa-identifier__required-links-item">
-              <a href="" class="usa-identifier__required-link usa-link">Performance reports</a>
-            </li>
-            <li class="usa-identifier__required-links-item">
-              <a href="" class="usa-identifier__required-link usa-link">Privacy policy</a>
-            </li>
+              <a href="" class="usa-identifier__required-link usa-link">Website map</a>
+            </li> 
           </ul>
         </div>
       </nav>
