@@ -50,14 +50,28 @@ export default function Card({title, description, image, btn, btnlink, issaved=f
       </div>
       <div class="usa-card__body">
     {  savedcard ? (
-            <button style={{}} onClick={saveCard}>saved</button>)
+            <button style={{padding: "12px"}} class="usa-button" onClick={saveCard}>saved</button>)
         
-            :(<button style={{}} onClick={saveCard}>save</button>)
+            :(<button style={{padding: "12px"}} class="usa-button" onClick={saveCard}>save</button>)
          }
         <p>
           {description}
         </p>
       </div>
+
+      
+<label class="usa-label" for="input-type-textarea">Leave a comment</label>
+<textarea
+  class="usa-textarea"
+  id="input-type-textarea"
+  name="input-type-textarea"
+  
+
+></textarea>
+
+
+
+
       <div class="usa-card__footer">
         <a href={btnlink} class="usa-button">{btn}</a>
       </div>
