@@ -1,4 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 https://www.spaceappschallenge.org/2023/challenges/emit-for-the-future/?tab=resources
 https://earth.jpl.nasa.gov/emit/data/data-portal/Greenhouse-Gases/
 https://lpdaac.usgs.gov/products/emitl1bradv001/
